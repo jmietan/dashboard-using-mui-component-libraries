@@ -17,7 +17,7 @@ const NavBar = () => {
       
         <Box sx={{ display: "flex", gap: 3, ml: "auto" }}>
           <Typography variant="h6" component="div">
-            Responses
+            Response
           </Typography>
           <Typography variant="h6" component="div">
             Interviews

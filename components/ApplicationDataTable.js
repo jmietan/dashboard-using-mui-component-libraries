@@ -12,22 +12,22 @@ const ApplicationDataTable = ({ data }) => {
     <TableContainer component={Paper}>
       <Table>
         <TableHead>
-          <TableRow>
-            <TableCell>Company</TableCell>
-            <TableCell>Position</TableCell>
-            <TableCell>Applied</TableCell>
-            <TableCell>Response</TableCell>
-            <TableCell>Interview</TableCell>
+          <TableRow >
+            <TableCell color="text.secondary">Company</TableCell>
+            <TableCell color="text.secondary">Position</TableCell>
+            <TableCell color="text.secondary">Applied</TableCell>
+            <TableCell color="text.secondary">Response</TableCell>
+            <TableCell color="text.secondary">Interview</TableCell>
           </TableRow>
         </TableHead>
-        <TableBody>
+        <TableBody >
           {data.map((row) => (
             <TableRow key={row.id}>
-              <TableCell>{row.company}</TableCell>
-              <TableCell>{row.position}</TableCell>
-              <TableCell>{row.applied}</TableCell>
-              <TableCell>{row.response}</TableCell>
-              <TableCell>{row.interview}</TableCell>
+              <TableCell color="text.disabled">{row.company}</TableCell>
+              <TableCell color="text.disabled">{row.position}</TableCell>
+              <TableCell color="text.disabled">{row.applied}</TableCell>
+              <TableCell color="text.disabled">{row.response}</TableCell>
+              <TableCell color="text.disabled">{row.interview}</TableCell>
             </TableRow>
           ))}
         </TableBody>
